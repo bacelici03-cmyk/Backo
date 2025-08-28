@@ -1,9 +1,51 @@
 <!DOCTYPE html>
-<html>
+<html lang="sr">
 <head>
-  <title>Test</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nekretnine - Početna</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  Radi!
+  <header class="site-header">
+    <div class="logo">Moja Agencija</div>
+    <nav>
+      <a href="index.html">Početna</a>
+      <a href="about.html">O nama</a>
+      <a href="faq.html">FAQ</a>
+      <a href="blog.html">Blog</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Pronađite svoj idealan dom u Crnoj Gori</h1>
+    <p>Kupite ili zakupite stan bez provizije</p>
+  </section>
+
+  <section class="filters">
+<label>Pretraga:
+  <input type="text" id="searchInput" placeholder="npr. stan, Budva, Herceg Novi">
+</label>
+    <label>Cijena do (€): <input type="number" id="maxPrice" placeholder="npr. 150000"></label>
+    <label>Površina od (m²): <input type="number" id="minSize" placeholder="npr. 50"></label>
+    <label>Sortiraj:
+      <select id="sort">
+        <option value="priceAsc">Cijena (rastuce)</option>
+        <option value="priceDesc">Cijena (opadajuce)</option>
+        <option value="sizeAsc">Površina (rastuce)</option>
+        <option value="sizeDesc">Površina (opadajuce)</option>
+      </select>
+    </label>
+    <button id="applyBtn">Primeni</button>
+  </section>
+
+  <section class="properties" id="propertiesList"></section>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 BaCkO. Sva prava zadržana.</p>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
