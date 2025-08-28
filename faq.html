@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="sr"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FAQ</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<header class="site-header"><div class="logo">Moja Agencija</div><nav>
+  <a href="index.html">Početna</a><a href="about.html">O nama</a><a href="faq.html">FAQ</a><a href="blog.html">Blog</a>
+</nav></header>
+<section class="page-content">
+  <h1>Česta pitanja</h1>
+  <div class="faq-item"><h3 onclick="toggleFaq(this)">Da li plaćam proviziju?</h3><p class="answer">Ne, usluga je besplatna za kupce i zakupce.</p></div>
+  <div class="faq-item"><h3 onclick="toggleFaq(this)">Kako da ponudim nekretninu?</h3><p class="answer">Kontaktirajte nas putem forme ili telefona navedenih na sajtu.</p></div>
+</section>
+<footer class="site-footer"><p>&copy; 2025 Moja Agencija.</p></footer>
+<script>
+function toggleFaq(el){const ans=el.nextElementSibling; ans.style.display=ans.style.display==='block'?'none':'block';}
+document.querySelectorAll('.answer').forEach(a=>a.style.display='none');
+</script>
+</body></html>

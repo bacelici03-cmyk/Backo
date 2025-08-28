@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detalji nekretnine</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">Moja Agencija</div>
+    <nav>
+      <a href="index.html">Početna</a>
+      <a href="about.html">O nama</a>
+      <a href="faq.html">FAQ</a>
+      <a href="blog.html">Blog</a>
+    </nav>
+  </header>
+
+  <section class="property-detail">
+    <div class="gallery">
+      <button class="prev" onclick="prevImage()">&#10094;</button>
+      <img id="galleryImage" src="" alt="Nekretnina">
+      <button class="next" onclick="nextImage()">&#10095;</button>
+    </div>
+
+    <div class="details">
+      <h1 id="propTitle"></h1>
+      <p><strong>Grad:</strong> <span id="propCity"></span></p>
+      <p><strong>Cijena:</strong> €<span id="propPrice"></span></p>
+      <p><strong>Površina:</strong> <span id="propSize"></span> m²</p>
+      <p><strong>Opis:</strong> <span id="propDesc"></span></p>
+    </div>
+  </section>
+
+  <section class="contact-form">
+    <h2>Kontaktiraj agenta</h2>
+    <form>
+      <label>Ime i prezime:
+        <input type="text" required>
+      </label>
+      <label>Email:
+        <input type="email" required>
+      </label>
+      <label>Poruka:
+        <textarea required></textarea>
+      </label>
+      <button type="submit">Pošalji</button>
+    </form>
+  </section>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 Moja Agencija. Sva prava zadržana.</p>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
